@@ -19,7 +19,7 @@ public class Calculator {
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
         System.out.println("What is the result of the expression?");
-        for (; countI < 3;) {
+        while ( countI < 3) {
             double num1Double = (Math.random() * highRangeValue) + lowRangeValue;
             int num1 = (int) num1Double;
             double num2Double = (Math.random() * highRangeValue) + lowRangeValue;
