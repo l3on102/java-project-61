@@ -1,4 +1,6 @@
-package hexlet.code;
+package hexlet.code.games;
+
+import hexlet.code.Games;
 
 public class Even implements Games {
     public void getRules() {
