@@ -11,14 +11,22 @@ public class App {
         int userSelected = scanner.nextInt();
         System.out.println("Your choice: " + userSelected);
         //System.out.println("Welcome to the Brain Games!");
-        if (userSelected == 0) {
+        switch (userSelected) {
+            case 0:
             scanner.close();
-        } else if (userSelected == 1) {
-            Cli.newUser();
-        } else if (userSelected == 2) {
-            Even.newEvenGame();
-        } else if (userSelected == 3) {
-            Calculator.newCalculator();
+            break;
+            case 1:
+                Cli.newUser();
+            break;
+            case 2:
+                    Engine.helloUser(new Even());
+
+            break;
+            case 3:
+
+                Engine.helloUser(new Calculator());
+
+            break;
         }
     }
 }
