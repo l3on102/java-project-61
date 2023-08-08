@@ -7,7 +7,7 @@ public class Even implements Games {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
     }
     public String[] getGameData() {
-        String[] gameData = new String [2];
+        String[] gameData = new String[2];
         int lowRangeValue = 1;
         int highRangeValue = 20;
         double questionDouble = (Math.random() * highRangeValue) + lowRangeValue;

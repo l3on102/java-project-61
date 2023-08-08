@@ -13,6 +13,8 @@ public class Progression implements Games {
         int lowRangeValue = 1;
         int highRangeValue = 20;
         int numbers = 10;
+        int lowRangeValue3 = 0;
+        int highRangeValue3 = numbers - 1;
         int temporary = 0;
         int[] progression = new int[numbers];
         String[] gameData = new String[2];
@@ -21,7 +23,7 @@ public class Progression implements Games {
         int numStart = (int) num1Double;
         double num2Double = (Math.random() * highRangeValue) + lowRangeValue;
         int numStep = (int) num2Double;
-        double num3Double = (Math.random() * (numbers - 1)) + (lowRangeValue - 1);
+        double num3Double = (Math.random() * (highRangeValue3)) + (lowRangeValue3);
         int randomIntNumber = (int) num3Double;
 
 
@@ -45,5 +47,5 @@ public class Progression implements Games {
     }
 
 
-    }
+}
 
