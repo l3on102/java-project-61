@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.\n1 - Greet\n2 - Even\n3 - Calc\n"
-                + "4 - GCD\n5 - Progression\n0 - Exit");
+                + "4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
         int userSelected = scanner.nextInt();
         System.out.println("Your choice: " + userSelected);
         //System.out.println("Welcome to the Brain Games!");
@@ -32,6 +32,9 @@ public class App {
                 break;
             case 5:
                 Engine.helloUser(new Progression());
+                break;
+            case 6:
+                Engine.helloUser(new Prime());
                 break;
         }
     }
