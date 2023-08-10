@@ -31,7 +31,7 @@ public class Prime implements Games {
         }   else {gameData[1] = "yes";
             }
         }
-        //System.out.println(Arrays.togradle String(gameData));
+        //System.out.println(Arrays.toString(gameData));
         return gameData;
     }
 }
