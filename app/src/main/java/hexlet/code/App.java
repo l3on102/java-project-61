@@ -13,7 +13,7 @@ public class App {
                 + "4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
         int userSelected = scanner.nextInt();
         System.out.println("Your choice: " + userSelected);
-        //System.out.println("Welcome to the Brain Games!");
+        System.out.println("Welcome to the Brain Games!");
         switch (userSelected) {
             case 0:
                 scanner.close();
