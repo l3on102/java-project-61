@@ -2,7 +2,7 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static void helloUser(Games game) {
+    public static void start(Games game) {
         int countI = 0;
         String answer = "null";
         final int gameRounds = 3;
