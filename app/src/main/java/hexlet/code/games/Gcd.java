@@ -3,8 +3,8 @@ package hexlet.code.games;
 import hexlet.code.Games;
 
 public class Gcd implements Games {
-    public void getRules() {
-        System.out.println("Find the greatest common divisor of given numbers.");
+    public String getRules() {
+        return "Find the greatest common divisor of given numbers.";
     }
     public String[] getGameData() {
 
@@ -28,5 +28,6 @@ public class Gcd implements Games {
         gameData[1] = Integer.toString(num1 + num2);
         return gameData;
     }
+
 
 }

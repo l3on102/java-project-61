@@ -5,8 +5,9 @@ import hexlet.code.Games;
 import java.util.Arrays;
 
 public class Progression implements Games {
-    public void getRules() {
-        System.out.println("What number is missing in the progression?");
+
+    public String getRules() {
+        return "What number is missing in the progression?";
     }
 
     public  String[] getGameData() {
@@ -45,6 +46,7 @@ public class Progression implements Games {
 
         return gameData;
     }
+
 
 
 }

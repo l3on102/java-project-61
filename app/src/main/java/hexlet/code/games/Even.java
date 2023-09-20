@@ -3,8 +3,8 @@ package hexlet.code.games;
 import hexlet.code.Games;
 
 public class Even implements Games {
-    public void getRules() {
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+    public String getRules() {
+        return "Answer 'yes' if the number is even, otherwise answer 'no'.";
     }
     public String[] getGameData() {
         String[] gameData = new String[2];
@@ -20,6 +20,7 @@ public class Even implements Games {
         }
         return gameData;
     }
+
 }
 
 

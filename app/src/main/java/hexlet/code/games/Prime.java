@@ -6,8 +6,9 @@ import hexlet.code.Games;
 
 public class Prime implements Games {
     @Override
-    public void getRules() {
-        System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+    public String getRules() {
+        //System.out.println("What is the result of the expression?");
+        return "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
     }
 
     @Override
@@ -34,4 +35,5 @@ public class Prime implements Games {
         //System.out.println(Arrays.toString(gameData));
         return gameData;
     }
+
 }

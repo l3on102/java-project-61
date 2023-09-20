@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Engine {
     public static void start(Games game) {
         int countI = 0;
-        String answer = "null";
+        String answer = "";
         final int gameRounds = 3;
         String[] gameData = new String[2];
         Scanner scanner = new Scanner(System.in);
@@ -12,9 +12,10 @@ public class Engine {
         System.out.print("May I have your name? ");
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
-        game.getRules();
+        //game.getRules();
+        System.out.println(game.getRules());
         while (countI < gameRounds) {
-            game.getGameData();
+            //game.getGameData();
             gameData = game.getGameData();
             System.out.println("Question: " + gameData[0]);
             answer = scanner.next();

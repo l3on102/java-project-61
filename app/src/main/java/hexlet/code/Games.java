@@ -1,8 +1,10 @@
 package hexlet.code;
 
 public interface Games {
-    void getRules();
+    String getRules(); //string return all
     String[] getGameData();
+    //String getRules1(); //string return all
 
 
 }
+

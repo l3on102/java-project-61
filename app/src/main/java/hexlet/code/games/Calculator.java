@@ -4,8 +4,9 @@ import hexlet.code.Games;
 
 public class Calculator implements Games {
 
-    public void getRules() {
-        System.out.println("What is the result of the expression?");
+
+    public String getRules() {
+        return "What is the result of the expression?calc";
     }
     public String[] getGameData() {
         int lowRangeValue = 1;
