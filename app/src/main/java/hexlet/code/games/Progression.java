@@ -1,10 +1,8 @@
 package hexlet.code.games;
 
-import hexlet.code.Games;
-
 import java.util.Arrays;
 
-public class Progression implements Games {
+public class Progression implements Game {
 
     public String getRules() {
         return "What number is missing in the progression?";

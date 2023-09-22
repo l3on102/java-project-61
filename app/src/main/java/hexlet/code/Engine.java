@@ -1,11 +1,14 @@
 package hexlet.code;
+import hexlet.code.games.Game;
+
 import java.util.Scanner;
 
 public class Engine {
-    public static void start(Games game) {
+    public static final int gameRounds = 6;
+    public static void start(Game game) {
         int countI = 0;
         String answer = "";
-        final int gameRounds = 3;
+        //public static final int gameRounds = 3;
         String[] gameData = new String[2];
         Scanner scanner = new Scanner(System.in);
 

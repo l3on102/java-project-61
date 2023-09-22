@@ -1,10 +1,14 @@
 package hexlet.code.games;
 
-import hexlet.code.Games;
+import hexlet.code.Utils;
+import hexlet.code.games.Game;
 
 
 
-public class Prime implements Games {
+public class Prime implements Game {
+
+    final int lowRangeValue = 1;
+    final int highRangeValue = 20;
     @Override
     public String getRules() {
         //System.out.println("What is the result of the expression?");
@@ -13,11 +17,12 @@ public class Prime implements Games {
 
     @Override
     public  String[] getGameData() {
-        int lowRangeValue = 1;
-        int highRangeValue = 20;
+        //int lowRangeValue = 1;
+        //int highRangeValue = 20;
         String[] gameData = new String[2];
-        double num1Double = (Math.random() * highRangeValue) + lowRangeValue;
-        int num = (int) num1Double;
+        //double num1Double = (Math.random() * highRangeValue) + lowRangeValue;
+        //int num = (int) num1Double;
+        int num = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         gameData[0] = Integer.toString(num);
         if (num < 2) {
             gameData[1] = "no";

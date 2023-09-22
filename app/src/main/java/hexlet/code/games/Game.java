@@ -1,6 +1,6 @@
-package hexlet.code;
+package hexlet.code.games;
 
-public interface Games {
+public interface Game {
     String getRules(); //string return all
     String[] getGameData();
     //String getRules1(); //string return all
