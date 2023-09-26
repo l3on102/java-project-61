@@ -21,7 +21,8 @@ public class Gcd implements Game {
         //double num2Double = (Math.random() * highRangeValue) + lowRangeValue;
         //int num2 = (int) num2Double;
         int num2 = Utils.getRandomNumber(lowRangeValue, highRangeValue);
-        gameData[0] = num1 + " " + " " + num2;
+        //gameData[0] = num1 + " " + " " + num2;
+        gameData[0] = num1 + " " + num2;
 
         /*while (num1 != 0 && num2 != 0) {
             if (num1 > num2) {
