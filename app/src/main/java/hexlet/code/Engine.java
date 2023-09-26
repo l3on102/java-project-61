@@ -4,7 +4,7 @@ import hexlet.code.games.Game;
 import java.util.Scanner;
 
 public class Engine {
-    public static final int gameRounds = 6;
+    public static final int gameRounds = 3;
     public static void start(Game game) {
         int countI = 0;
         String answer = "";
