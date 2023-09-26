@@ -9,6 +9,7 @@ public class Prime implements Game {
 
     final int lowRangeValue = 1;
     final int highRangeValue = 20;
+
     @Override
     public String getRules() {
         //System.out.println("What is the result of the expression?");
@@ -16,7 +17,7 @@ public class Prime implements Game {
     }
 
     @Override
-    public  String[] getGameData() {
+    public String[] getGameData() {
         //int lowRangeValue = 1;
         //int highRangeValue = 20;
         String[] gameData = new String[2];
@@ -24,7 +25,8 @@ public class Prime implements Game {
         //int num = (int) num1Double;
         int num = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         gameData[0] = Integer.toString(num);
-        if (num < 2) {
+        gameData[1] = isPrime(num);
+        /*if (num < 2) {
             gameData[1] = "no";
         }
         if (num == 2) {
@@ -36,9 +38,30 @@ public class Prime implements Game {
                 break;
         }   else {gameData[1] = "yes";
             }
-        }
+        }*/
         //System.out.println(Arrays.toString(gameData));
         return gameData;
     }
+
+    private String isPrime(int num) {
+
+         String answer = "";
+
+        if (num < 2) {
+            answer = "no";
+        }
+        if (num == 2) {
+            answer = "yes";
+        }
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                answer = "no";
+                break;
+        }   else {answer = "yes";
+            }
+        }
+        return answer;
+    }
+
 
 }

@@ -21,7 +21,8 @@ public class Engine {
             //game.getGameData();
             gameData = game.getGameData();
             System.out.println("Question: " + gameData[0]);
-            System.out.println(gameData[0]);
+            //System.out.println(gameData[0]);
+            System.out.print("Your answer: ");
             answer = scanner.next();
             if (answer.equals(gameData[1])) {
                 System.out.println("Correct!");
