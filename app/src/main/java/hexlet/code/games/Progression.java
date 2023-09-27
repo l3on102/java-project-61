@@ -2,7 +2,6 @@ package hexlet.code.games;
 
 import hexlet.code.Utils;
 
-import java.util.Arrays;
 
 public class Progression implements Game {
     final int lowRangeValue = 1;
@@ -17,7 +16,7 @@ public class Progression implements Game {
 
     public  String[] getGameData() {
 
-        String[] gameData ;
+        String[] gameData;
 
         int numStart = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         int numStep = Utils.getRandomNumber(lowRangeValue, highRangeValue);
@@ -26,14 +25,14 @@ public class Progression implements Game {
 
         return gameData;
     }
-    private String[] progressionCreation(int numStart, int numStep, int randomIntNumber, int numbers){
+    private String[] progressionCreation(int numStart, int numStep, int randomIntNumber, int numbers) {
         String[] progressionData = new String[2];
         int temporary = 0;
         temporary = numStart;
         StringBuilder progressionString =  new StringBuilder();
         for (int i = 0; i < numbers; i++) {
             temporary = temporary + numStep;
-            if (i == randomIntNumber){
+            if (i == randomIntNumber) {
                 progressionData[1] = String.valueOf(temporary);
                 progressionString.append("..");
                 progressionString.append(" ");

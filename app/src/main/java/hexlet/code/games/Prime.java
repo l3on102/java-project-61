@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Utils;
-import hexlet.code.games.Game;
+
 
 
 
@@ -27,7 +27,7 @@ public class Prime implements Game {
 
     private String isPrime(int num) {
 
-         String answer = "";
+        String answer = "";
 
         if (num < 2) {
             answer = "no";
@@ -39,7 +39,8 @@ public class Prime implements Game {
             if (num % i == 0) {
                 answer = "no";
                 break;
-        }   else {answer = "yes";
+            } else {
+                answer = "yes";
             }
         }
         return answer;

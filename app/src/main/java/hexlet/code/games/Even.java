@@ -1,7 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Utils;
-import hexlet.code.games.Game;
+
 
 public class Even implements Game {
     final int lowRangeValue = 1;
