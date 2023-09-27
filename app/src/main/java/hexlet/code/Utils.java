@@ -1,6 +1,6 @@
 package hexlet.code;
 
-import hexlet.code.games.Even;
+//import hexlet.code.games.Even;
 
 public class Utils {
     public static int getRandomNumber(int lowRangeValue, int highRangeValue){

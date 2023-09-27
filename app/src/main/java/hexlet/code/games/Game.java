@@ -1,9 +1,9 @@
 package hexlet.code.games;
 
 public interface Game {
-    String getRules(); //string return all
+    String getRules();
     String[] getGameData();
-    //String getRules1(); //string return all
+
 
 
 }
