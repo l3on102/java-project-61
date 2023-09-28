@@ -32,6 +32,9 @@ public class Calculator implements Game {
             case "*":
                 result  = num1 * num2;
                 break;
+            default:
+                System.out.println("wrong operator");
+                break;
         }
         gameData[1] = Integer.toString(result);
         return gameData;

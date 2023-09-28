@@ -21,11 +21,11 @@ public class Progression implements Game {
         int numStart = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         int numStep = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         int randomIntNumber = Utils.getRandomNumber(lowRangeValueNumbers, highRangeValueNumbers);
-        gameData = progressionCreation(numStart, numStep, randomIntNumber, numbers);
+        gameData = progressionCreation(numStart, numStep, randomIntNumber);
 
         return gameData;
     }
-    private String[] progressionCreation(int numStart, int numStep, int randomIntNumber, int numbers) {
+    private String[] progressionCreation(int numStart, int numStep, int randomIntNumber) {
         String[] progressionData = new String[2];
         int temporary = 0;
         temporary = numStart;

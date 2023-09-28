@@ -9,11 +9,12 @@ public class Utils {
         int question = (int) questionDouble;
         return question;
     }
-    public static boolean isEven(int number) {
-        if (number % 2 < 1) {
-            return true;
+    public static String isEven(int number) {
+       /* return ((number % 2) < 1);*/
+        if (((number % 2) < 1)) {
+            return "yes";
         } else {
-            return false;
+            return "no";
         }
     }
 }
