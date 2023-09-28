@@ -9,7 +9,7 @@ public class Calculator implements Game {
     private final int lowRangeOperators = 1;
     private final int highRangeOperators = 3;
     private String[] arithmeticOperators = {"/", "+", "-", "*"};
-    public String getRules() {
+    public final String getRules() {
         return "What is the result of the expression?calc";
     }
     public String[] getGameData() {

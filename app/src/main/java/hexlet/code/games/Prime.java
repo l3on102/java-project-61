@@ -11,7 +11,7 @@ public class Prime implements Game {
     private final int highRangeValue = 20;
 
     @Override
-    public String getRules() {
+    public final String getRules() {
         return "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
     }
 

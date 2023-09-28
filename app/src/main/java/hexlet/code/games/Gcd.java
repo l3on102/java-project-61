@@ -6,7 +6,7 @@ import hexlet.code.Utils;
 public class Gcd implements Game {
     private final int lowRangeValue = 1;
     private final int highRangeValue = 20;
-    public String getRules() {
+    public final String getRules() {
         return "Find the greatest common divisor of given numbers.";
     }
     public String[] getGameData() {
