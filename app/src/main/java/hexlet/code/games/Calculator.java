@@ -5,9 +5,9 @@ import hexlet.code.Utils;
 
 public class Calculator implements Game {
     final int lowRangeValue = 1;
-    final int highRangeValue = 20;
-    final int lowRangeOperators = 1;
-    final int highRangeOperators = 3;
+    private final int highRangeValue = 20;
+    private final int lowRangeOperators = 1;
+    private final int highRangeOperators = 3;
     String[] arithmeticOperators = {"/", "+", "-", "*"};
     public String getRules() {
         return "What is the result of the expression?calc";
