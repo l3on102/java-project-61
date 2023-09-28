@@ -4,11 +4,11 @@ import hexlet.code.Utils;
 
 
 public class Progression implements Game {
-    final int lowRangeValue = 1;
-    final int highRangeValue = 20;
-    final int numbers = 10;
-    final int lowRangeValueNumbers = 0;
-    final int highRangeValueNumbers = numbers - 1;
+    private final int lowRangeValue = 1;
+    private final int highRangeValue = 20;
+    private final int numbers = 10;
+    private final int lowRangeValueNumbers = 0;
+    private final int highRangeValueNumbers = numbers - 1;
 
     public String getRules() {
         return "What number is missing in the progression?";

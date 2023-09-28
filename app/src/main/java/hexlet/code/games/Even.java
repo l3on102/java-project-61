@@ -4,8 +4,8 @@ import hexlet.code.Utils;
 
 
 public class Even implements Game {
-    final int lowRangeValue = 1;
-    final int highRangeValue = 20;
+    private final int lowRangeValue = 1;
+    private final int highRangeValue = 20;
     public String getRules() {
         return "Answer 'yes' if the number is even, otherwise answer 'no'.";
     }

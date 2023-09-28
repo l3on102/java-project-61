@@ -4,11 +4,11 @@ import hexlet.code.Utils;
 
 
 public class Calculator implements Game {
-    final int lowRangeValue = 1;
+    private final int lowRangeValue = 1;
     private final int highRangeValue = 20;
     private final int lowRangeOperators = 1;
     private final int highRangeOperators = 3;
-    String[] arithmeticOperators = {"/", "+", "-", "*"};
+    private String[] arithmeticOperators = {"/", "+", "-", "*"};
     public String getRules() {
         return "What is the result of the expression?calc";
     }

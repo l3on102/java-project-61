@@ -7,8 +7,8 @@ import hexlet.code.Utils;
 
 public class Prime implements Game {
 
-    final int lowRangeValue = 1;
-    final int highRangeValue = 20;
+    private final int lowRangeValue = 1;
+    private final int highRangeValue = 20;
 
     @Override
     public String getRules() {
