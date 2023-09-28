@@ -10,7 +10,7 @@ public class Engine {
         String answer = "";
         String[] gameData = new String[2];
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!");
+        //System.out.println("Welcome to the Brain Games!");
 
         System.out.print("May I have your name? ");
         String userName = scanner.next();

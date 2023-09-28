@@ -32,7 +32,7 @@ public class App {
         System.out.println("0 - Exit");
         int userSelected = scanner.nextInt();
         System.out.println("Your choice: " + userSelected);
-
+        System.out.println("Welcome to the Brain Games!");
         switch (userSelected) {
             case EXIT:
                 System.out.println("Game over");
