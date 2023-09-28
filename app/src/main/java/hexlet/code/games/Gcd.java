@@ -9,7 +9,7 @@ public class Gcd implements Game {
     public final String getRules() {
         return "Find the greatest common divisor of given numbers.";
     }
-    public String[] getGameData() {
+    public final String[] getGameData() {
 
         String[] gameData = new String[2];
 

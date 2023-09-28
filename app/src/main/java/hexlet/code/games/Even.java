@@ -9,7 +9,7 @@ public class Even implements Game {
     public final String getRules() {
         return "Answer 'yes' if the number is even, otherwise answer 'no'.";
     }
-    public String[] getGameData() {
+    public final String[] getGameData() {
         String[] gameData = new String[2];
 
         int question = Utils.getRandomNumber(lowRangeValue, highRangeValue);

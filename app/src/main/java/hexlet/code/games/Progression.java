@@ -14,7 +14,7 @@ public class Progression implements Game {
         return "What number is missing in the progression?";
     }
 
-    public  String[] getGameData() {
+    public  final String[] getGameData() {
 
         String[] gameData;
 

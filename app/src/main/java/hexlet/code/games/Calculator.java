@@ -12,7 +12,7 @@ public class Calculator implements Game {
     public final String getRules() {
         return "What is the result of the expression?calc";
     }
-    public String[] getGameData() {
+    public final String[] getGameData() {
         String[] gameData = new String[2];
         int result = 0;
         int num1 = Utils.getRandomNumber(lowRangeValue, highRangeValue);

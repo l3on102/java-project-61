@@ -16,7 +16,7 @@ public class Prime implements Game {
     }
 
     @Override
-    public String[] getGameData() {
+    public final String[] getGameData() {
 
         String[] gameData = new String[2];
         int num = Utils.getRandomNumber(lowRangeValue, highRangeValue);
