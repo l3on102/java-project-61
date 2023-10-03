@@ -6,9 +6,9 @@ import hexlet.code.Utils;
 public class Calculator implements Game {
     private final int lowRangeValue = 1;
     private final int highRangeValue = 20;
-    private final int lowRangeOperators = 1;
-    private final int highRangeOperators = 3;
-    private String[] arithmeticOperators = {"/", "+", "-", "*"};
+    private final int lowRangeOperators = 0;
+    private final int highRangeOperators = 2;
+    private String[] arithmeticOperators = {"+", "-", "*"};
     public final String getRules() {
         return "What is the result of the expression?calc";
     }
@@ -18,11 +18,10 @@ public class Calculator implements Game {
         int num1 = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         int num2 = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         int random = Utils.getRandomNumber(lowRangeOperators, highRangeOperators);
-        String operator = arithmeticOperators[random];
 
-        gameData[0] = num1 + " " + operator + " " + num2;
+        gameData[0] = num1 + " " + arithmeticOperators[random] + " " + num2;
 
-        switch (operator) {
+        switch (arithmeticOperators[random]) {
             case "+":
                 result  = num1 + num2;
                 break;
@@ -33,7 +32,6 @@ public class Calculator implements Game {
                 result  = num1 * num2;
                 break;
             default:
-                System.out.println("wrong operator");
                 break;
         }
         gameData[1] = Integer.toString(result);

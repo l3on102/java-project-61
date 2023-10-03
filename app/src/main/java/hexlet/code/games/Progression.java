@@ -35,12 +35,10 @@ public class Progression implements Game {
             if (i == randomIntNumber) {
                 progressionData[1] = String.valueOf(temporary);
                 progressionString.append("..");
-                progressionString.append(" ");
             } else {
                 progressionString.append(temporary);
-                progressionString.append(" ");
             }
-
+            progressionString.append(" ");
         }
         progressionData[0] = progressionString.toString();
         return progressionData;

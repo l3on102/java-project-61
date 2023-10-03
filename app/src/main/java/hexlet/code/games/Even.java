@@ -14,7 +14,7 @@ public class Even implements Game {
 
         int question = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         gameData[0] = Integer.toString(question);
-        gameData[1] = Utils.isEven(question);
+        gameData[1] = question % 2 == 0 ? "yes" : "no";
         return gameData;
     }
 }

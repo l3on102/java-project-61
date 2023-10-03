@@ -16,11 +16,11 @@ public class Gcd implements Game {
         int num1 = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         int num2 = Utils.getRandomNumber(lowRangeValue, highRangeValue);
         gameData[0] = num1 + " " + num2;
-        gameData[1] = lokingGCD(num1, num2);
+        gameData[1] = getGCD(num1, num2);
         return gameData;
     }
 
-    private String lokingGCD(int num1, int num2) {
+    private static String getGCD(int num1, int num2) {
         while (num1 != 0 && num2 != 0) {
             if (num1 > num2) {
                 num1 = num1 % num2;
